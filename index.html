@@ -1,3 +1,214 @@
+Lia Nwe
+lia_vt
+Invisible
+
+REKAA — 6:38 PM
+Image
+Lia Nwe [せな],  — 6:39 PM
+LESSGOOOOOOOO
+THANK UUUUUU
+what about the issue date?
+it's a bit out of line
+REKAA — 6:39 PM
+yeah working on it
+Lia Nwe [せな],  — 6:39 PM
+NICE ok thank u!!!!!!
+REKAA — 6:40 PM
+/**
+ * cardTexture.js
+ *
+ * ── ADDING A NEW STYLE ──
+ * 1. Add your PNGs to /public  (e.g. /card-front-rose.png, /card-back-rose.png)
+ * 2. Add an entry to CARD_STYLES below
+
+message.txt
+10 KB
+just replace the cardTexture.js code with this
+Lia Nwe [せな],  — 6:41 PM
+got it o7
+and then npm run build and npm run deploy, right?
+REKAA — 6:42 PM
+npm run dev to preview ur work and then the rest yest
+Lia Nwe [せな],  — 6:42 PM
+ok cool nice
+also
+i sold my soul to elon sighs
+i finally got twt blue
+OTL
+REKAA — 6:42 PM
+you did not...
+girl.
+Lia Nwe [せな],  — 6:42 PM
+...sobs
+REKAA — 6:42 PM
+YOU KNOW THAT DOESNT DO MUCH
+Lia Nwe [せな],  — 6:42 PM
+it was 50% off...
+well
+according to my friend
+it does
+and like
+the people it didn't do much for
+either had not great tweets
+or they were shadowbanned
+so
+and i heard from my friend that there r people who only follow people who have the checkmark
+and all the big vtubers have the checkmark
+even sena openly hates elon and he still has twt blue cause he was like if u wanna grow on twt u have to have blue
+REKAA — 6:45 PM
+saoij
+sighhhh
+its okayyy
+REKAA — 7:51 PM
+also did u get ur code working :3
+Lia Nwe [せな],  — 8:31 PM
+i just got home from school
+REKAA — 8:32 PM
+oh shoot
+Lia Nwe [せな],  — 8:35 PM
+YUP IT WORKS
+just tested it
+UH WAIT
+the name
+is off center
+REKAA — 8:35 PM
+?
+Lia Nwe [せな],  — 8:35 PM
+OH SHIT
+if it's not a long name
+it's off center
+REKAA — 8:36 PM
+show me
+Lia Nwe [せな],  — 8:36 PM
+Image
+when i put in a long name it worked though
+REKAA — 8:36 PM
+youi fucking
+give me a sec
+Lia Nwe [せな],  — 8:36 PM
+LMFAOPBIAHPBIADFB
+REKAA — 8:55 PM
+Image
+/**
+ * cardTexture.js
+ *
+ * ── ADDING A NEW STYLE ──
+ * 1. Add your PNGs to /public  (e.g. /card-front-rose.png, /card-back-rose.png)
+ * 2. Add an entry to CARD_STYLES below
+ * 3. That's it — the style picker in the form updates automatically
+ *
+ * Canvas: 1024 × 576 px
+ *
+ * data = {
+ *   name, book, issued, id, credits,
+ *   photo: null | base64DataURL,
+ *   style: 'classic' (the id from CARD_STYLES)
+ * }
+ */
+
+// ═══════════════════════════════════════
+//  CARD STYLES CONFIG  ← edit this
+// ═══════════════════════════════════════
+const BASE = import.meta.env.BASE_URL;
+export const CARD_STYLES = [
+  {
+    id:        'blue',           // unique key, used internally
+    label:     'Blue',           // shown in the picker
+    front:     `${BASE}Member_card_Blue_ver.png`,   // path in /public
+    back:      null,    // path in /public
+    preview:   `${BASE}Member_card_Blue_ver.png`,   // thumbnail shown in picker (can be same as front)
+    fontColor: '#328EFF'
+  },
+  {
+    id:        'green',          
+    label:     'Green',          
+    front:     `${BASE}Member_card_Green_ver.png`,   
+    back:      null,    
+    preview:   `${BASE}Member_card_Green_ver.png`,   
+    fontColor: '#00AF0B'
+  },
+  {
+    id:        'lightPurple',           
+    label:     'Light Purple',        
+    front:     `${BASE}Member_card_Light_Purple_ver.png`,  
+    back:      null,    
+    preview:   `${BASE}Member_card_Light_Purple_ver.png`,   
+    fontColor: '#A44BFF'
+  },
+  {
+    id:        'orange',           
+    label:     'Orange',        
+    front:     `${BASE}Member_card_Orange_ver.png`,   
+    back:      null,  
+    preview:   `${BASE}Member_card_Orange_ver.png`,   
+    fontColor: '#FF9900'
+  },
+  {
+    id:        'purple',           
+    label:     'Dark Purple',           
+    front:     `${BASE}Member_card_Purple_ver.png`,   
+    back:      null,    
+    preview:   `${BASE}Member_card_Purple_ver.png`,   
+    fontColor: '#790BEA'
+  },
+  {
+    id:        'red',           
+    label:     'red',           
+    front:     `${BASE}Member_card_Red_ver.png`,   
+    back:      null,    
+    preview:   `${BASE}Member_card_Red_ver.png`,   
+    fontColor: '#CC1515'
+  },
+  {
+    id:        'sage',           
+    label:     'Sage',           
+    front:     `${BASE}Member_card_Sage_green_ver.png`,   
+    back:      null,    
+    preview:   `${BASE}Member_card_Sage_green_ver.png`,   
+    fontColor: '#98A869'
+  },
+  {
+    id:        'yellow',           
+    label:     'Yellow',           
+    front:     `${BASE}Member_card_Yellow_ver.png`,   
+    back:      null,    
+    preview:   `${BASE}Member_card_Yellow_ver.png`,   
+    fontColor: '#FFD800'
+  },
+    {
+    id:        'purple2',           
+    label:     'Purple',           
+    front:     `${BASE}Member_card_Purple_ver.png`,   
+    back:      null,    
+    preview:   `${BASE}Member_card_Purple_ver.png`,   
+    fontColor: '#790BEA'
+  },
+];
+
+// ── Preload all style images ──
+const imageCache = {};
+
+function preload(src) {
+... (169 lines left)
+
+message.txt
+9 KB
+try this
+Lia Nwe [せな],  — 9:00 PM
+o7
+REKAA — 9:00 PM
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Club — Membership</title>
+
+message.txt
+5 KB
+also replace the index.html with this
+it fixes the text
+﻿
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +216,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Book Club — Membership</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-  <script type="module" crossorigin src="/BLBookClub/assets/index-DiRtVANE.js"></script>
+  <script type="module" crossorigin src="/BLBookClub/assets/index-Dp12a8tj.js"></script>
   <link rel="stylesheet" crossorigin href="/BLBookClub/assets/index-D_SOKiZC.css">
 </head>
 <body>
